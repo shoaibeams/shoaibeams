@@ -11,13 +11,13 @@ const Menu = () => (
       }}
     >
       <li>
+        <Link to="/blog">Blog</Link>
+      </li>
+      <li>
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/about">About Me</Link>
-      </li>
-      <li>
-        <Link to="/blog">Blog</Link>
+        <Link to="/about">About</Link>
       </li>
     </ul>
   </div>
