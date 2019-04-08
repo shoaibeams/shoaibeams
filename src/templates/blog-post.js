@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 
 export default ({ data }) => {
   const post = data.markdownRemark
+
   return (
     <Layout>
       <h1>{post.frontmatter.title}</h1>

@@ -24,7 +24,7 @@ exports.createPages = ({ graphql, actions }) => {
               slug
             }
           }
-        }
+        }   
       }
     }
   `).then(result => {

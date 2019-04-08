@@ -7,8 +7,9 @@ const IndexPage = ({ data }) => (
     <Layout>
       <h1>Latest Posts</h1>
       {data.allMarkdownRemark.edges.map(({ node }) => {
-        const { id, frontmatter } = node
+        const { id, frontmatter, fields } = node
         const { author, date, title, path } = frontmatter
+        console.log(path)
         return (
           <div key={id}>
             <h3>{title}</h3>
@@ -17,7 +18,7 @@ const IndexPage = ({ data }) => (
             </small>
             <br />
             <br />
-            <Link to={path}>Read More</Link>
+            <Link to={fields.slug}>Read More</Link>
             <br />
             <br />
             <hr />
@@ -39,6 +40,9 @@ export const pageQuery = graphql`
             date
             author
             path
+          }
+          fields {
+            slug
           }
         }
       }
