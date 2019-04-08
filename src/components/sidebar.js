@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import './sidebar.css'
+import dp from '../images/dp.jpg'
 
 const Sidebar = ({ siteTitle }) => {
   return (
     <div className="column">
       <div className="logo">
-        <img src="dp.jpg" alt="" />
+        <img src={dp} alt="" />
         <Link to="/">
           <h2 id="title">{siteTitle}</h2>
         </Link>
