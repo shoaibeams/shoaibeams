@@ -1,0 +1,30 @@
+  .column {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 12px;
+    background: black;
+    color: white;
+    width: 250px;   
+  }
+  .logo {
+    padding-right: 10px;
+  }
+  .logo h1 {
+    padding-left: 50px;
+  }
+  img {
+    border-radius: 50%;
+    /* width: 100%; */
+  }
+  .hr {
+    margin-right: 13px;
+    background-color: white;
+  }
+
+  .row {
+    padding-left: 70px;
+      padding-top: 22px;
+      padding-bottom: 15px;
+      /* padding-left: 22px; */
+  }

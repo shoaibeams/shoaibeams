@@ -1,8 +1,8 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Header from "./header"
-import Menu from "./menu"
-import "./layout.css"
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import Sidebar from '../components/sidebar'
+
+import './layout.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -16,10 +16,9 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <Menu />
-        <div style={{ paddingLeft: "40px" }}>{children}</div>
+      <div className="container">
+        <Sidebar siteTitle={data.site.siteMetadata.title} />
+        <div className="children">{children}</div>
       </div>
     )}
   />
