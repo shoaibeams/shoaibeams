@@ -1,0 +1,67 @@
+*, html {
+  font-size: 62.5%;
+  text-decoration: none; 
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 2.7rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.3rem;
+}
+
+body {
+  margin: 0;
+}
+
+small {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.5rem;
+  @media screen and (max-width: 680px) {
+    p {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 430px) {
+    p {
+      font-size: .7rem;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  
+  div {
+    font-size: 1.5rem;
+  }
+  
+  a {
+    font-size: 1.5rem;
+  }
+}
+
+.children {
+  padding-left: 40px;
+  padding-top: 10px;
+  background: aliceblue;  
+  flex: 1;
+  a {
+    color: black;
+    // font-size: 2.5rem;
+    &:hover {
+      color:#dbbc93;
+    }
+  }  
+}

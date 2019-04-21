@@ -2,7 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Sidebar from '../components/sidebar'
 
-import './layout.css'
+import './layout.scss'
 
 const Layout = ({ children }) => (
   <StaticQuery

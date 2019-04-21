@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import './sidebar.css'
+import { FaTwitter, FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import './sidebar.scss'
 import dp from '../images/dp.jpg'
 
 const Sidebar = ({ siteTitle }) => {
@@ -13,21 +14,21 @@ const Sidebar = ({ siteTitle }) => {
         </Link>
       </div>
       <hr className="hr" />
-      <Link to="/blog">Blog</Link>
+      <Link to="/blog">Blog </Link>
       <Link to="/contact">Contact</Link>
       <Link to="/portfolio">Portfolio</Link>
       <div className="social">
         <a href="https://www.linkedin.com/in/shoaib-khalid-408791113/">
-          <i className="fab fa-linkedin-in" />
+          <FaLinkedinIn />
         </a>
         <a href="https://www.facebook.com/shoaibkhalid1996">
-          <i className="fab fa-facebook-f" />
+          <FaFacebookF />
         </a>
         <a href="https://github.com/shoaibeams">
-          <i className="fab fa-github" />
+          <FaGithub />
         </a>
         <a href="https://twitter.com/shoaibkhalid_">
-          <i className="fab fa-twitter" />
+          <FaTwitter />
         </a>
       </div>
     </div>
