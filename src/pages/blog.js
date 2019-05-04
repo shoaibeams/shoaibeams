@@ -17,6 +17,7 @@ const IndexPage = ({ data }) => (
             <small>
               Posted by {author} on {date}
             </small>
+            <img src="../images/102.jpg" alt="" />
             <br />
             <br />
             <Link to={fields.slug}>Read More</Link>

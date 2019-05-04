@@ -3,65 +3,106 @@
     flex-direction: column;
     align-items: center;
     width: 25rem;
-    background: black;   
+    background: black;
+    font-size: 2.2rem;
 
-    a {
-      font-size: 1.2rem;
-      color: white;
-      padding: 1.2rem 0;
+    .resume {
+        transition: 2s;
+        position: relative;
+
+        svg {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: 39%;
+            padding-left: 5px;
+        }
+
+        &:hover svg {
+            transition: all 2s;
+            display: inline;
+        }
     }
+
+    a,
+    a:link {
+        font-size: 2rem;
+        color: white;
+        padding: 1.2rem 0;
+    }
+
     a:hover {
-      color: #dbbc93;
-      text-decoration: underline;
+        color: #dbbc93;
+        transition: .2s;
     }
-  }  
+}
 
-  .hr {
+.hr {
     width: 90%;
-  }
+}
 
-  .logo {    
+.logo {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 
     img {
-      width: 90%;
-      padding: .5rem;
-      border-radius: 50%;
+        width: 90%;
+        margin-left: 1.2rem;
+        border-radius: 50%;
     }
-  }
 
-  .social {    
+    h1 {
+        font-weight: 400;
+    }
+}
+
+.social {
     position: absolute;
     overflow: auto;
     padding-bottom: 2rem;
-    bottom: 0; 
+    bottom: 0;
     transform: translateX(-1.5rem);
 
-    a {
-      font-size: 2rem;
-      display: inline;
-      padding-left: 2rem;
+    & a:link {
+        padding-left: 2rem;
     }
-  } 
 
-   @media screen and (max-width: 680px) {
-    .column {
-      width: 15rem;
-    } 
-    .social {
-      font-size: 1rem;
+    .fb:hover {
+        color: #0665d9;
     }
-  a {
-    font-size: 1rem;
-    padding-left: 1rem;
-  }
+
+    .tw:hover {
+        color: #1da1f2;
+    }
+
+    .lin:hover {
+        color: #0379b6;
+    }
+
+    .gh:hover {
+        color: grey;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    .column {
+        width: 15rem;
+    }
+
+    .social {
+        font-size: 1rem;
+    }
+
+    a {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
 }
 
 @media screen and (max-height: 380px) {
-  .social {
-    display: none;
-  }    
+    .social {
+        display: none;
+    }
 }
-

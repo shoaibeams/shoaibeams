@@ -17,12 +17,15 @@ const IndexPage = () => (
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nisi
           delectus. Magni debitis, qui voluptates culpa minima distinctio, tempora earum
-          quibusdam aperiam ex esse possimus suscipit impedit neque corrupti quam.
+          quibusdam aperiam ex esse possimus suscipit impedit neque corrupti quam. Lorem
+          ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quod quidem
+          dolore id, quasi animi perferendis alias dolor explicabo voluptate, ab ipsam,
+          maxime culpa! Unde temporibus culpa perferendis nostrum aut!
         </p>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nisi
-          delectus. Magni debitis, qui voluptates culpa minima distinctio, tempora earum
-          quibusdam aperiam ex esse possimus suscipit impedit neque corrupti quam.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur ducimus
+          tempore necessitatibus earum, eveniet quos dolorum labore fugit provident illum?
+          Quia eum reprehenderit velit. Aliquam ab ea corrupti dicta expedita!
         </p>
       </div>
     </Layout>
