@@ -8,7 +8,9 @@ import {
   FaExternalLinkAlt
 } from 'react-icons/fa'
 import './sidebar.scss'
-import dp from '../images/dp.jpg'
+
+import dp from '../assets/images/dp.jpg'
+import resume from '../assets/shoaib.pdf'
 
 const Sidebar = ({ siteTitle }) => {
   return (
@@ -26,8 +28,8 @@ const Sidebar = ({ siteTitle }) => {
       <Link to="/blog">Blog </Link>
       <Link to="/contact">Contact</Link>
       <Link to="/portfolio">Portfolio</Link>
-      
-      <a href="shoaib.pdf" target="_blank" className="resume">
+
+      <a href={resume} target="_blank" rel="noopener noreferrer" className="resume">
         Resume <FaExternalLinkAlt />
       </a>
 
